@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header {
+    width: 500px;
+    margin: 30px auto;
+}
+
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  justify-content: space-evenly;
+}
+

@@ -1,0 +1,42 @@
+
+@charset "UTF-8";
+
+header {
+    width: 500px;
+    margin: 20px auto;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+.green_box {
+  grid-row: 1 / 3;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.red_box, .yellow_box {
+  grid-column-start: 2;
+}
+
+.red_box {
+  grid-row: 1;
+}
+
+.yellow_box {
+  grid-row: 2;
+}
+
+
+.blue_box {
+  grid-column-start: 3;
+  grid-row: 1 / 3;
+  align-self: center;
+  justify-self: flex-end;
+}

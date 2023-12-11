@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh;
+}
+
+main {
+    flex-direction: row;
+}
+
+div {
+    height: 550px;
+}
+
+.content p {
+    padding-bottom: 80px;
+}
+
+.orange-box {
+    border-radius: 10px 0 0 10px;
+}
+
+.green-box {
+    border-radius: 0 10px 10px 0;
+}
+
+.content {
+    margin: 20px 0 0 20px;
+}
+
+input {
+
+    width: 150px;
+    height: 45px;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-orange:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn-blue:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-green:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+}
