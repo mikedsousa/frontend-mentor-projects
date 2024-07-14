@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  
+  .summary {
+    @apply text-dark-purple font-bold py-5 list-none flex justify-between md:hover:text-hover-purple
+  }
+
+  .description {
+    @apply text-grayish-purple text-sm
+  }
+
+}
