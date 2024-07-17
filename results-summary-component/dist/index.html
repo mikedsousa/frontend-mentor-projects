@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Hanken Grotesk -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./css/output.css" />
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body class="font-body md:h-screen flex flex-col justify-center items-center">
+  <main class="flex flex-col md:flex-row  md:items-center md:justify-center">
+    <section
+      class="bg-gradient-to-b from-light-slate-blue to-light-royal-blue text-center text-white h-[45vh] flex flex-col justify-around items-center px-10 py-5 rounded-b-[35px] md:max-w-[300px] md:h-full md:rounded-3xl">
+      <h1 class="text-light-lavander font-bold text-lg">Your Result</h1>
+      <div
+        class="rounded-full bg-gradient-to-b from-violet-blue to-persian-blue flex-grow-0 w-32 h-32 flex flex-col justify-center">
+        <span class="text-5xl font-extrabold">76</span>
+        <span class="text-light-lavander opacity-65">of 100</span>
+      </div>
+      <h2 class="text-2xl font-semibold">Great</h2>
+      <p class="text-light-lavander text-sm">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+    <section class="flex flex-col gap-5 pt-5 mx-8 md:w-[300px] md:py-5">
+      <h2 class="text-dark-gray-blue text-xl font-bold">Summary</h2>
+      <div class="flex flex-col gap-4" data-container>
+
+      </div>
+      <button class="bg-dark-gray-blue w-full h-14 text-white text-xl rounded-3xl md:hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
+        Continue
+      </button>
+    </section>
+  </main>
+
+  <footer class="text-center p-4">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="underline" href="https://www.linkedin.com/in/mike-de-sousa/"
+      target="_blank" rel="external">Mike de Sousa</a>.
+  </footer>
+</body>
+<script type="module" src="./js/main.js" defer></script>
+
+</html>
