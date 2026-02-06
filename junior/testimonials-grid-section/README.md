@@ -1,102 +1,152 @@
-# Frontend Mentor - Testimonials grid section
+# Frontend Mentor - Testimonials Grid Section
 
-![Design preview for the Testimonials grid section coding challenge](./preview.jpg)
+Uma solução moderna e responsiva para o desafio Testimonials Grid Section do Frontend Mentor.
 
-## Welcome! 👋
+## 📋 Índice
 
-Thanks for checking out this front-end coding challenge.
+- [Visão Geral](#visão-geral)
+  - [O Desafio](#o-desafio)
+  - [Designs de Referência](#designs-de-referência)
+- [Meu Processo](#meu-processo)
+  - [Construído com](#construído-com)
+  - [O que Aprendi](#o-que-aprendi)
+  - [Desafios Superados](#desafios-superados)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Autor](#autor)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Visão Geral
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### O Desafio
 
-## The challenge
+Os usuários devem ser capazes de:
 
-Your challenge is to build out this testimonials grid section and get it looking as close to the design as possible.
+- ✅ Visualizar o layout ideal do site dependendo do tamanho de tela do dispositivo
+- ✅ Experimentar efeitos de hover nos elementos interativos
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Designs de Referência
 
-Your users should be able to:
+#### Design Desktop
 
-- View the optimal layout for the site depending on their device's screen size
+![Desktop Design](./design/desktop-design.jpg)
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+#### Design Mobile
 
-## Where to find everything
+![Mobile Design](./design/mobile-design.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## Meu Processo
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Construído com
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- **Semantic HTML5** - Marcação semântica e acessível
+- **Tailwind CSS** - Framework CSS utilitário para estilização rápida
+- **CSS Grid** - Layout responsivo com grid de 4 colunas
+- **Flexbox** - Alinhamento e distribuição de componentes
+- **Mobile-first Workflow** - Abordagem responsiva começando pelo mobile
+- **Google Fonts** - Tipografia Barlow Semi Condensed
+- **Frontend Mentor** - Design e desafio
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### O que Aprendi
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+#### 1. **CSS Grid**
 
-## Using AI coding assistants
+Aprendi a trabalhar com grid responsivo que se adapta a diferentes tamanhos de tela:
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+- Grid de 2 colunas em mobile (`md:grid-cols-2`)
+- Grid de 4 colunas em desktop (`lg:grid-cols-4`)
+- Uso de `col-span` e `row-span` para elementos que ocupam múltiplas células
+- `col-start` para posicionamento específico de items
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+```html
+<main class="grid md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+  <div class="lg:col-span-2 lg:row-span-2">Daniel</div>
+  <div class="lg:col-start-4 lg:row-span-2">Kira</div>
+</main>
+```
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+#### 2. **Layout Responsivo com Tailwind CSS**
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+Implementei classes responsivas para diferentes viewports:
 
-## Building your project
+```html
+<!-- Mobile: 1 coluna -->
+<!-- Tablet (md): 2 colunas -->
+<!-- Desktop (lg): 4 colunas com grid rows -->
+<div class="md:col-span-2 lg:col-span-2">Card</div>
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+#### 3. **Custom Properties (Design Tokens)**
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Criei um sistema de tipografia personalizada no `app.css`:
 
-## Deploying your project
+```css
+.text-preset-1 {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.text-preset-2 {
+  font-size: 13px;
+  line-height: 110%;
+  font-weight: 500;
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+#### 4. **Acessibilidade**
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Contraste de cores adequado segundo WCAG
+- Estrutura semântica clara
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Desafios Superados
 
-## Create a custom `README.md`
+1. **Ajuste de Alturas do Grid** - Os cards tinham alturas desproporcionais inicialmente. Resolvido com:
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+   ```html
+   <main class="items-stretch gap-8 lg:grid-rows-2"></main>
+   ```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+   Isso garante que ambas as linhas tenham altura igual.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+2. **Posicionamento do Card Kira** - O card deveria ocupar a coluna direita inteira (2 linhas):
 
-## Submitting your solution
+   ```html
+   <div class="lg:col-start-4 lg:row-span-2"></div>
+   ```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+   `col-start-4` posiciona a Kira na 4ª coluna, `row-span-2` faz ocupar ambas as linhas.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+3. **Responsividade Mobile** - Garantir fluxo correto em telas pequenas:
+   ```html
+   <div class="md:col-span-2 order-5 lg:order-3"></div>
+   ```
+   `md:col-span-2` faz cards ocuparem 2 colunas em tablet, `order-*` reordena no desktop.
 
-## Sharing your solution
+## Estrutura do Projeto
 
-There are multiple places you can share your solution:
+```
+testimonials-grid-section/
+├── index.html          # Arquivo HTML principal
+├── app.css             # Estilos customizados Tailwind
+├── images/             # Imagens de perfil dos depoentes
+│   ├── image-daniel.jpg
+│   ├── image-jonathan.jpg
+│   ├── image-kira.jpg
+│   ├── image-jeanette.jpg
+│   ├── image-patrick.jpg
+│   └── favicon-32x32.png
+├── design/             # Designs de referência
+│   ├── desktop-design.jpg
+│   └── mobile-design.jpg
+├── style-guide.md      # Guia de estilos do projeto
+├── README-template.md  # Template original do desafio
+└── README.md           # Este arquivo
+```
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Arquivos Principais
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- **index.html** - Estrutura HTML com 5 cards de depoimentos
+- **app.css** - Classes customizadas para tipografia (`text-preset-1`, `text-preset-2`, etc.)
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
-## Got feedback for us?
+---
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+**Desenvolvido com ❤️ como parte do desafio Frontend Mentor**
