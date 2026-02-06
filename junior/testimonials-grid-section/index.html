@@ -28,16 +28,16 @@
 
   <body class="bg-gray-200 px-6">
     <main
-      class="max-w-[1114px] mt-28 w-full mx-auto grid gap-8
+      class="max-w-[1440px] mt-28 w-full mx-auto grid gap-8
          md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2"
     >
       <!-- Card Daniel -->
       <article
-        class="bg-[#733FC8] text-white p-8 rounded-lg  md:col-span-2 lg:order-1 lg:col-span-2"
+        class="bg-[#733FC8] text-white p-8 relative rounded-lg md:col-span-2 lg:order-1 lg:col-span-2"
       >
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 md:relative md:z-10">
           <img
-            class="w-10 rounded-[50%] border-3 border-purple-400"
+          class="w-10 rounded-[50%] border-3 border-purple-400"
             src="./images/image-daniel.jpg"
             alt="image-daniel"
           />
@@ -46,7 +46,7 @@
             <span class="text-preset-4">Verified Graduate</span>
           </div>
         </div>
-        <p class="text-preset-1 my-6">
+        <p class="text-preset-1 my-6 md:relative md:z-10">
           I received a job offer mid-course, and the subjects I learned were
           current, if not more so, in the company I joined. I honestly feel I
           got every penny’s worth.
@@ -60,6 +60,7 @@
           completing the course, I’ve successfully switched careers, working as
           a Software Engineer at a VR startup. ”
         </p>
+        <img class="hidden md:block md:absolute md:top-[0px] md:right-1/5 md:z-0" src="./images/bg-pattern-quotation.svg" alt="quotation">
       </article>
 
       <!-- Card Jonathan -->
