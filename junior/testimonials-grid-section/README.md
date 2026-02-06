@@ -96,30 +96,6 @@ Criei um sistema de tipografia personalizada no `app.css`:
 - Contraste de cores adequado segundo WCAG
 - Estrutura semântica clara
 
-### Desafios Superados
-
-1. **Ajuste de Alturas do Grid** - Os cards tinham alturas desproporcionais inicialmente. Resolvido com:
-
-   ```html
-   <main class="items-stretch gap-8 lg:grid-rows-2"></main>
-   ```
-
-   Isso garante que ambas as linhas tenham altura igual.
-
-2. **Posicionamento do Card Kira** - O card deveria ocupar a coluna direita inteira (2 linhas):
-
-   ```html
-   <div class="lg:col-start-4 lg:row-span-2"></div>
-   ```
-
-   `col-start-4` posiciona a Kira na 4ª coluna, `row-span-2` faz ocupar ambas as linhas.
-
-3. **Responsividade Mobile** - Garantir fluxo correto em telas pequenas:
-   ```html
-   <div class="md:col-span-2 order-5 lg:order-3"></div>
-   ```
-   `md:col-span-2` faz cards ocuparem 2 colunas em tablet, `order-*` reordena no desktop.
-
 ## Estrutura do Projeto
 
 ```
