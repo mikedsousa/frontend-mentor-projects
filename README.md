@@ -18,6 +18,7 @@ O Frontend Mentor é uma plataforma que oferece uma variedade de desafios de fro
 | FAQ accordion                  | HTML, Tailwind CSS, JavaScript | [Link](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)                  | [Link](https://faq-accordion-io.netlify.app/)                  |
 | Results summary component      | HTML, Tailwind CSS, TypeScript | [Link](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)      | [Link](https://results-summary-component-io.netlify.app/)      |
 | Product preview card component | HTML, Tailwind                 | [Link](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Link](https://product-preview-card-component-io.netlify.app/) |
+| Meet landing page | HTML, Tailwind                 | [Link](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR) | [Link](https://meet-landing-page-x.netlify.app/) |
 
 ### Junior
 
