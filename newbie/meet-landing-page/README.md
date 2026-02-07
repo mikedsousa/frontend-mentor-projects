@@ -1,122 +1,58 @@
-# Frontend Mentor - Meet landing page solution
+# Frontend Mentor - Solução Meet Landing Page
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Solução para o [desafio Meet landing page do Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Este projeto auxiliou no aprimoramento de habilidades de codificação através da construção de um projeto realista.
 
-## Table of contents
+## Índice
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construído-com)
+  - [Aprendizados](#aprendizados)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Visão geral
 
-## Overview
+### O desafio
 
-### The challenge
+Os usuários conseguem:
 
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+- Visualizar o layout ótimo dependendo do tamanho da tela do dispositivo
+- Ver estados de hover nos elementos interativos
+- Acessar a página com layout responsivo para mobile, tablet e desktop
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solução do desafio: [Link](https://meet-landing-page-x.netlify.app/)
 
-## My process
+## Meu processo
 
-### Built with
+### Construído com
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- HTML5 semântico
+- Tailwind CSS (framework utilitário)
+- Flexbox para layout responsivo
+- Abordagem mobile-first
+- Google Fonts - Red Hat Display
+- Imagens otimizadas para diferentes breakpoints
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Aprendizados
 
-### What I learned
+Durante este projeto pude consolidar meus conhecimentos em:
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- **Tailwind CSS**: Uso extensivo de classes utilitárias para styling responsivo
+- **Positioning com Tailwind**: Implementação de `absolute` positioning com `left-1/2` e `-translate-x-1/2` para centralização
+- **Background images com Tailwind**: Uso de `bg-cover`, `bg-center` e URLs dinâmicas com `bg-[url()]`
+- **Layout responsivo**: Estrutura adaptável para diferentes tamanhos de tela usando flexbox
+- **Componentes interativos**: Botões com estados de hover
 
-To see how you can add code snippets, see below:
+## Tecnologias
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- HTML5
+- Tailwind CSS (via CDN)
+- CSS personalizado
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+## Como executar
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+1. Abra o arquivo `index.html` em um navegador moderno
+2. O Tailwind CSS é carregado via CDN, não é necessário build process
