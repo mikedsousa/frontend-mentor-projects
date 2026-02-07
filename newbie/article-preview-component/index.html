@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src//images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <title>Frontend Mentor | Article preview component</title>
+  <script src="https://kit.fontawesome.com/e735c4091b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/app.css" />
+</head>
+
+<body class="flex flex-wrap justify-center items-center h-dvh bg-grey-200 px-300 md:p-[80px]">
+  <main
+    class="bg-white flex flex-col justify-center rounded-[10px] rounded-tl-[10px] md:flex-row md:min-h-85 max-w-190">
+    <img class="rounded-tr-[10px] rounded-tl-[10px] md:w-70 md:rounded-tr-none md:rounded-bl-[10px]"
+      src="./src/images/drawers.jpg" alt="drawers" />
+    <div class="flex flex-col md:items-center md:justify-evenly">
+      <section class="px-400 mt-400">
+        <h1 class="text-preset-1 text-grey-900">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="text-preset-2-medium mt-300 mb-12 text-grey-500">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </section>
+      <section class="relative px-400 w-full h-full flex items-center justify-between pb-200">
+        <div class="flex">
+          <img class="w-500 rounded-[50%] mr-200" src="./src/images/avatar-michelle.jpg" alt="avatar-michelle" />
+          <div class="flex flex-col">
+            <span class="text-preset-2-bold text-grey-900">
+              Michelle Appleton
+            </span>
+            <span class="text-preset-2-medium text-grey-400">
+              28 Jun 2020
+            </span>
+          </div>
+        </div>
+
+        <button class="shareButton absolute right-500 z-10"><i class="fa-solid fa-share ml-16" style="color: #000000"></i></button>
+
+        <div
+          id="container"
+          class="bg-grey-900 absolute left-0 bottom-0 h-full w-full rounded-bl-xl rounded-br-xl flex items-center justify-between px-400  md:bottom-20 md:w-[65%] md:max-w-[215px] md:left-45 md:rounded-xl md:h-14 lg:left-80 hidden">
+          <div class="flex items-center gap-200 ">
+            <span class="text-preset-3 text-grey-400">share</span>
+            <img src="./src/images/icon-facebook.svg" alt="icon-facebook" />
+            <img src="./src/images/icon-twitter.svg" alt="icon-twitter" />
+            <img src="./src/images/icon-pinterest.svg" alt="icon-pinterest" />
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <script defer src="./src/main.ts"></script>
+</body>
+
+</html>
