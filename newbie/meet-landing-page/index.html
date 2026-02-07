@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Red Hat Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="app.css" />
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+
+<body>
+  <header class="flex flex-col items-center justify-center py-8 text-center">
+    <img class="mb-16" src="./assets/logo.svg" alt="logo" />
+    <div class="xl:flex">
+      <img class="mb-12 xl:hidden" src="./assets/tablet/image-hero.png" alt="image-hero" />
+      <img class="hidden xl:block" src="./assets/desktop/image-hero-left.png" alt="" />
+      <div class="flex flex-col items-center justify-center px-9 gap-6 xl:max-w-[550px]">
+        <h1 class="text-preset-1 text-[#28283D]">Group Chat for Everyone</h1>
+        <p class="text-preset-4 text-[#87879D]">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-[16px] text-white">
+          <button class="bg-[#4D96A9] hover:opacity-75 py-[16px] px-[40px] rounded-4xl font-semibold cursor-pointer">
+            Download <span class="text-[#8FE3F9]">v1.3</span>
+          </button>
+          <button class="bg-[#855FB1] hover:opacity-75 py-[16px] px-[40px] rounded-4xl font-semibold cursor-pointer">
+            What is it?
+          </button>
+        </div>
+      </div>
+      <img class="hidden xl:block" src="./assets/desktop/image-hero-right.png" alt="" />
+    </div>
+  </header>
+
+  <main class="p-7 flex flex-col items-center justify-center text-center ">
+    <img src="./assets/desktop/number_one.png" alt="number" />
+    <figure class="my-16 flex justify-center flex-wrap gap-4">
+      <img class="w-[150px] rounded-lg lg:w-[256px]" src="./assets/desktop/image-woman-in-videocall.jpg"
+        alt="image-woman-in-videocall" />
+      <img class="w-[150px] rounded-lg lg:w-[256px]" src="./assets/desktop/image-women-videochatting.jpg"
+        alt="image-women-videochatting" />
+      <img class="w-[150px] rounded-lg lg:w-[256px]" src="./assets/desktop/image-men-in-meeting.jpg" alt="image-men-in-meeting" />
+      <img class="w-[150px] rounded-lg lg:w-[256px]" src="./assets/desktop/image-man-texting.jpg" alt="image-man-texting" />
+    </figure>
+    <span class="text-preset-3 uppercase text-[#4D96A9]">Built for modern use</span>
+    <h2 class="text-preset-2 mt-4 mb-8 text-[#28283D] max-w-[450px]">
+      Smarter meetings, all in one place
+    </h2>
+    <p class="text-preset-4 text-[#87879D] max-w-[500px]">
+      Send messages, share files, show your screen, and record your meetings —
+      all in one workspace. Control who can join with invite-only team access,
+      data encryption, and data export.
+    </p>
+  </main>
+
+  <footer
+    class="relative bg-cover mt-28 
+    
+    bg-center bg-[url(./assets/desktop/image-footer.jpg)] 
+    md:bg-[url(./assets/tablet/image-footer.jpg)] 
+    lg:bg-[url(./assets/desktop/image-footer.jpg)] 
+
+    lg:bg-contain lg:bg-no-repeat">
+
+    <img class="absolute z-20 top-[-105px] left-1/2 -translate-x-1/2" src="./assets/desktop/number_two.png"
+      alt="number_two" />
+
+    <div class="absolute inset-0 bg-[#4D96A9]/90"></div>
+
+    <div class="relative z-10 text-white py-16 text-center flex flex-col items-center justify-center lg:flex-row lg:text-left lg:gap-8">
+      <h2 class="text-preset-2 lg:max-w-[350px]">Experience more together</h2>
+      <p class="text-preset-4 m-6 max-w-[500px] lg:max-w-[350px]">
+        Stay connected with reliable HD meetings and unlimited one-on-one and
+        group video sessions.
+      </p>
+      <button class="bg-[#855FB1] hover:opacity-75 py-[16px] px-[40px] rounded-4xl font-semibold">
+        Download
+        <span class="text-[#D9B8FF]">v1.3</span>
+      </button>
+    </div>
+  </footer>
+</body>
+
+</html>
